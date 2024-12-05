@@ -1,0 +1,138 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    width: 70%;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 13%;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+.child-div{
+    border: 0.5px solid black;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.door-image{
+    border-radius: 10px;
+    width: 100%;
+    
+    
+}
+
+.door-image-selected{
+    opacity: 0.3;
+}
+
+.instructions{
+    font-weight: lighter;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.button-style{
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: aliceblue;
+    width: 30%;
+}
+
+.inactive {
+    background-color: gray;
+    color: black;
+    cursor: not-allowed; 
+    pointer-events: none;
+  }
+
+.yes-no-buttons{
+    background-color: black;
+    color: aliceblue;
+    width: 10%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hided-button{
+    display: none;
+}
+
+.welcome-style{
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+
+@media (max-width: 630px){
+    .welcome-style{
+        font-size: 13px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: auto;
+        width: 70%;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 13%;
+        border-radius: 10px;
+        gap: 15px;
+      }
+
+    .instructions{
+        font-weight: lighter;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .button-style{
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: black;
+        color: aliceblue;
+        width: 80%;
+        height: 40px;
+       
+    }
+
+}
+
+@media (min-width: 631px) and (max-width: 940px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: auto;
+        width: 70%;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 13%;
+        border-radius: 10px;
+        gap: 15px;
+      }
+
+    .welcome-style{
+        font-size: 22px;
+    }
+    .instructions{
+        font-weight: lighter;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+}
