@@ -26,7 +26,7 @@ function changeOption(){
 function nobuttonLost(current_door, current_button, choosenDoor){
     document.getElementById(current_door).classList.remove("door-image-selected");
     document.getElementById(current_button).classList.remove("inactive");
-    document.querySelectorAll("img")[choosenDoor].src = "./goat.webp";
+    document.querySelectorAll("img")[choosenDoor].src = "./goat.png";
     document.querySelector(".instructions").innerHTML = "You lost!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
@@ -41,7 +41,7 @@ function nobuttonWon(current_door, current_button, choosenDoor){
     document.getElementById(current_door).classList.remove("door-image-selected");
     document.getElementById(current_button).classList.remove("inactive");
     console.log("I am working");
-    document.querySelectorAll("img")[choosenDoor].src = "./car.webp";
+    document.querySelectorAll("img")[choosenDoor].src = "./car.png";
     document.querySelector(".instructions").innerHTML = "You WON!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
@@ -52,7 +52,7 @@ function nobuttonWon(current_door, current_button, choosenDoor){
 
 function yesbuttonLost(l){
     console.log("The m " + l + " is this")
-    document.querySelectorAll("img")[l].src = "./goat.webp";
+    document.querySelectorAll("img")[l].src = "./goat.png";
     document.querySelector(".instructions").innerHTML = "You lost!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
@@ -63,7 +63,7 @@ function yesbuttonLost(l){
 
 function yesbuttonWon(l){
     console.log("The m " + l + " is this")
-    document.querySelectorAll("img")[l].src = "./car.webp";
+    document.querySelectorAll("img")[l].src = "./car.png";
     document.querySelector(".instructions").innerHTML = "You WON!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
@@ -110,7 +110,7 @@ for (var i=0; i < myLenght; i++){
                     if (random_number === 0){    
                         expose_number = Math.floor((Math.random()*2) + 1)
                         console.log("The expose number is " + expose_number)
-                        document.querySelectorAll("img")[expose_number].src = "./goat.webp";
+                        document.querySelectorAll("img")[expose_number].src = "./goat.png";
                         exposed = expose_number;
                         
                     } 
@@ -119,7 +119,7 @@ for (var i=0; i < myLenght; i++){
                             for (j=0; j<3; j++){
                                 if (j!==0 && j!==random_number){
                                     console.log(items[j]);
-                                    document.querySelectorAll("img")[j].src = "./goat.webp";
+                                    document.querySelectorAll("img")[j].src = "./goat.png";
                                     exposed = j;
 
                                 }
@@ -197,7 +197,7 @@ for (var i=0; i < myLenght; i++){
                             expose_number = 2
                         }
                         console.log("The expose number is " + expose_number)
-                        document.querySelectorAll("img")[expose_number].src = "./goat.webp";
+                        document.querySelectorAll("img")[expose_number].src = "./goat.png";
                         exposed = expose_number;
                         
                     } 
@@ -206,7 +206,7 @@ for (var i=0; i < myLenght; i++){
                             for (j=0; j<3; j++){
                                 if (j!==1 && j!==random_number){
                                     console.log(items[j]);
-                                    document.querySelectorAll("img")[j].src = "./goat.webp";
+                                    document.querySelectorAll("img")[j].src = "./goat.png";
                                     exposed = j;
 
                                 }
@@ -279,7 +279,7 @@ for (var i=0; i < myLenght; i++){
                     if (random_number === 2){   
                         expose_number = Math.floor(Math.random()*2)
                         console.log("The expose number is " + expose_number)
-                        document.querySelectorAll("img")[expose_number].src = "./goat.webp";
+                        document.querySelectorAll("img")[expose_number].src = "./goat.png";
                         exposed = expose_number;
                         
                     } 
@@ -288,7 +288,7 @@ for (var i=0; i < myLenght; i++){
                             for (j=0; j<3; j++){
                                 if (j!==2 && j!==random_number){
                                     console.log(items[j]);
-                                    document.querySelectorAll("img")[j].src = "./goat.webp";
+                                    document.querySelectorAll("img")[j].src = "./goat.png";
                                     exposed = j;
 
                                 }

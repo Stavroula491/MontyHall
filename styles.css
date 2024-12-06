@@ -6,9 +6,24 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #F8F1E5;
+    background-image: url(./background.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
   }
-
+/*
+.background-style{
+    width: 100%;
+    background-image: url(./background.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}*/
 
 .container{
     display: grid;
@@ -24,16 +39,14 @@ body{
   }
 
 .child-div{
-    border: 0.5px solid black;
-    padding-bottom: 10px;
+    
+    padding-bottom: 0px;
     border-radius: 10px;
 }
 
 .door-image{
     border-radius: 10px;
     width: 100%;
-    
-    
 }
 
 .door-image-selected{
@@ -44,6 +57,12 @@ body{
     font-weight: lighter;
     font-size: 40px;
     margin-top: 40px;
+    color: #fff;
+    text-shadow: 
+    0 0 5px lightskyblue,  
+    0 0 10px lightskyblue, 
+    0 0 20px lightskyblue, 
+    0 0 30px lightskyblue; 
 }
 
 .button-style{
@@ -75,13 +94,21 @@ body{
 }
 
 .welcome-style{
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 25px;
-
+    font-family: Broadway;
+    /*color: #F5E3C3;*/
+    font-weight: bold;
+    color: #fff; /* Base white color */
+    text-shadow: 
+    0 0 5px lightskyblue,  
+    0 0 10px lightskyblue, 
+    0 0 20px lightskyblue, 
+    0 0 30px lightskyblue;
 }
 
 .footer-style{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 10px;
 }
@@ -109,6 +136,7 @@ body{
         font-size: 25px;
         margin-top: 40px;
     }
+
     .button-style{
         border-radius: 10px;
         margin-top: 10px;
