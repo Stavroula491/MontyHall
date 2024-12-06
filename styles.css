@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #F8F1E5;
   }
 
 
@@ -49,7 +50,7 @@ body{
     margin-top: 10px;
     background-color: black;
     color: aliceblue;
-    width: 30%;
+    width: 50%;
 }
 
 .inactive {
@@ -74,11 +75,12 @@ body{
 
 .welcome-style{
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
 @media (max-width: 630px){
+
     .welcome-style{
         font-size: 13px;
     }
@@ -135,4 +137,10 @@ body{
         font-size: 25px;
         margin-top: 40px;
     }
+}
+
+.footer-style{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 10px;
 }

@@ -26,11 +26,14 @@ function changeOption(){
 function nobuttonLost(current_door, current_button, choosenDoor){
     document.getElementById(current_door).classList.remove("door-image-selected");
     document.getElementById(current_button).classList.remove("inactive");
-    console.log("I am working");
     document.querySelectorAll("img")[choosenDoor].src = "./goat.webp";
     document.querySelector(".instructions").innerHTML = "You lost!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
+    for (b=0; b<3; b++){
+        document.querySelectorAll(".door")[b].classList.add("inactive");
+    }
+
 
 }
 
@@ -42,6 +45,9 @@ function nobuttonWon(current_door, current_button, choosenDoor){
     document.querySelector(".instructions").innerHTML = "You WON!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
+    for (b=0; b<3; b++){
+        document.querySelectorAll(".door")[b].classList.add("inactive");
+    }
 }
 
 function yesbuttonLost(l){
@@ -50,6 +56,9 @@ function yesbuttonLost(l){
     document.querySelector(".instructions").innerHTML = "You lost!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
+    for (b=0; b<3; b++){
+        document.querySelectorAll(".door")[b].classList.add("inactive");
+    }
 }
 
 function yesbuttonWon(l){
@@ -58,6 +67,9 @@ function yesbuttonWon(l){
     document.querySelector(".instructions").innerHTML = "You WON!";
     document.getElementById("yes-button").classList.add("hided-button");
     document.getElementById("no-button").classList.add("hided-button");
+    for (b=0; b<3; b++){
+        document.querySelectorAll(".door")[b].classList.add("inactive");
+    }
 }
 
 /* Creat the array with the items */
