@@ -40,7 +40,6 @@ function nobuttonLost(current_door, current_button, choosenDoor){
 function nobuttonWon(current_door, current_button, choosenDoor){
     document.getElementById(current_door).classList.remove("door-image-selected");
     document.getElementById(current_button).classList.remove("inactive");
-    console.log("I am working");
     document.querySelectorAll("img")[choosenDoor].src = "./car.png";
     document.querySelector(".instructions").innerHTML = "You WON!";
     document.getElementById("yes-button").classList.add("hided-button");
@@ -51,7 +50,6 @@ function nobuttonWon(current_door, current_button, choosenDoor){
 }
 
 function yesbuttonLost(l){
-    console.log("The m " + l + " is this")
     document.querySelectorAll("img")[l].src = "./goat.png";
     document.querySelector(".instructions").innerHTML = "You lost!";
     document.getElementById("yes-button").classList.add("hided-button");
@@ -62,7 +60,6 @@ function yesbuttonLost(l){
 }
 
 function yesbuttonWon(l){
-    console.log("The m " + l + " is this")
     document.querySelectorAll("img")[l].src = "./car.png";
     document.querySelector(".instructions").innerHTML = "You WON!";
     document.getElementById("yes-button").classList.add("hided-button");
@@ -76,7 +73,6 @@ function yesbuttonWon(l){
 var items = [];
 var random_number = Math.floor(Math.random() * 3);
 /* var random_number = 1; */
-console.log(random_number);
 for (var i = 0; i<3; i++){
     if (i === random_number){
         items[i] = "car";
@@ -84,7 +80,7 @@ for (var i = 0; i<3; i++){
         items[i] = "goat";
     }
 }
-console.log(items);
+
 
 var choice = 0;
 var exposed = 0;
@@ -95,7 +91,6 @@ for (var i=0; i < myLenght; i++){
     myButton.addEventListener("click", function() {
 
         var buttonInnerHTML = this.innerHTML;
-        console.log(buttonInnerHTML);
 
         switch(buttonInnerHTML){
             case "1st door":
@@ -109,7 +104,6 @@ for (var i=0; i < myLenght; i++){
                 setTimeout(function(){
                     if (random_number === 0){    
                         expose_number = Math.floor((Math.random()*2) + 1)
-                        console.log("The expose number is " + expose_number)
                         document.querySelectorAll("img")[expose_number].src = "./goat.png";
                         exposed = expose_number;
                         
@@ -118,7 +112,6 @@ for (var i=0; i < myLenght; i++){
 
                             for (j=0; j<3; j++){
                                 if (j!==0 && j!==random_number){
-                                    console.log(items[j]);
                                     document.querySelectorAll("img")[j].src = "./goat.png";
                                     exposed = j;
 
@@ -135,7 +128,6 @@ for (var i=0; i < myLenght; i++){
                     var choiceButton = document.querySelectorAll(".yes-no-buttons")[n];
                     choiceButton.addEventListener("click", function(){
                         var choiceInnerhtml = this.innerHTML;
-                        console.log(choiceInnerhtml);
 
                         switch(choiceInnerhtml){
                             case "Yes":
@@ -157,7 +149,6 @@ for (var i=0; i < myLenght; i++){
                                 break;
                             case "No":
                                 my_item = items[choice];
-                                console.log(my_item);
                                 switch(my_item){
                                     case "goat":
                                         current_door = "first-door";
@@ -196,7 +187,7 @@ for (var i=0; i < myLenght; i++){
                         if (expose_number===1){
                             expose_number = 2
                         }
-                        console.log("The expose number is " + expose_number)
+                        
                         document.querySelectorAll("img")[expose_number].src = "./goat.png";
                         exposed = expose_number;
                         
@@ -205,7 +196,6 @@ for (var i=0; i < myLenght; i++){
                            
                             for (j=0; j<3; j++){
                                 if (j!==1 && j!==random_number){
-                                    console.log(items[j]);
                                     document.querySelectorAll("img")[j].src = "./goat.png";
                                     exposed = j;
 
@@ -221,7 +211,7 @@ for (var i=0; i < myLenght; i++){
                     var choiceButton = document.querySelectorAll(".yes-no-buttons")[n];
                     choiceButton.addEventListener("click", function(){
                         var choiceInnerhtml = this.innerHTML;
-                        console.log(choiceInnerhtml);
+                        
 
                         switch(choiceInnerhtml){
                             case "Yes":
@@ -244,7 +234,6 @@ for (var i=0; i < myLenght; i++){
                                 break;
                             case "No":
                                 my_item = items[choice];
-                                console.log(my_item);
                                 switch(my_item){
                                     case "goat":
                                         current_door = "second-door";
@@ -277,8 +266,7 @@ for (var i=0; i < myLenght; i++){
                 
                 setTimeout(function(){
                     if (random_number === 2){   
-                        expose_number = Math.floor(Math.random()*2)
-                        console.log("The expose number is " + expose_number)
+                        expose_number = Math.floor(Math.random()*2);
                         document.querySelectorAll("img")[expose_number].src = "./goat.png";
                         exposed = expose_number;
                         
@@ -287,7 +275,6 @@ for (var i=0; i < myLenght; i++){
                            
                             for (j=0; j<3; j++){
                                 if (j!==2 && j!==random_number){
-                                    console.log(items[j]);
                                     document.querySelectorAll("img")[j].src = "./goat.png";
                                     exposed = j;
 
@@ -303,7 +290,6 @@ for (var i=0; i < myLenght; i++){
                     var choiceButton = document.querySelectorAll(".yes-no-buttons")[n];
                     choiceButton.addEventListener("click", function(){
                         var choiceInnerhtml = this.innerHTML;
-                        console.log(choiceInnerhtml);
 
                         switch(choiceInnerhtml){
                             case "Yes":
@@ -325,7 +311,6 @@ for (var i=0; i < myLenght; i++){
                                 break;
                             case "No":
                                 my_item = items[choice];
-                                console.log(my_item);
                                 switch(my_item){
                                     case "goat":
                                         current_door = "third-door";
