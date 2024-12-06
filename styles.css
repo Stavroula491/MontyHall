@@ -13,7 +13,6 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     height: auto;
     width: 70%;
     align-items: center;
@@ -91,7 +90,7 @@ body{
     .welcome-style{
         font-size: 13px;
     }
-    /*
+    
     .container{
         display: grid;
         grid-template-columns: 1fr  1fr 1fr;
@@ -102,7 +101,7 @@ body{
         margin-left: 13%;
         border-radius: 10px;
         gap: 15px;
-      } */
+      } 
 
     .instructions{
         font-weight: lighter;
@@ -122,7 +121,7 @@ body{
 }
 
 @media (min-width: 631px) and (max-width: 940px){
-    /*
+    
     .container{
         display: grid;
         grid-template-columns: 1fr;
@@ -134,7 +133,7 @@ body{
         margin-left: 13%;
         border-radius: 10px;
         gap: 15px;
-      } */
+      } 
 
     .welcome-style{
         font-size: 22px;
